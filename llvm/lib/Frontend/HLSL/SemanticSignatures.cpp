@@ -106,8 +106,7 @@ hlsl::getAvailableStages(dxbc::PSV::SemanticKind SemanticKind) {
         {Triple::Pixel, IOType::Out, SemanticInterpretation::Target}};
     return Stages;
   }
-  case dxbc::PSV::SemanticKind::VertexID:
-  case dxbc::PSV::SemanticKind::InstanceID: {
+  case dxbc::PSV::SemanticKind::VertexID: {
     static constexpr SemanticStageInfo Stages[] = {
         {Triple::Vertex, IOType::In, SemanticInterpretation::SV}};
     return Stages;

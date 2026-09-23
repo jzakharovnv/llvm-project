@@ -64,7 +64,7 @@ constexpr SemanticKind SupportedKinds[] = {
     SemanticKind::CullDistance,     SemanticKind::TessFactor,
     SemanticKind::InsideTessFactor, SemanticKind::DispatchThreadID,
     SemanticKind::GroupID,          SemanticKind::GroupIndex,
-    SemanticKind::GroupThreadID,    SemanticKind::InstanceID};
+    SemanticKind::GroupThreadID};
 
 // Ensure all stages return a valid SemanticInterpretation
 TEST(HLSLSemanticStagesTest, StagesAreValid) {
